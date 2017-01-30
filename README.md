@@ -1,37 +1,46 @@
-## Welcome to GitHub Pages
+## High-Performance Computing Workshops
+##### [Computational Science and Engineering](http://cse.illinois.edu/)
 
-You can use the [editor on GitHub](https://github.com/uiuc-cse/hpc-sp17/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Foreword
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This workshop series will introduce you to basic concepts in High-Performance Computing.  If you need to use a cluster, this is a great way to get up to speed on how things work and why.
 
-### Markdown
+Any Unix-based machine has everything we need for the workshop. If you plan to use your personal laptop that runs Windows, you should install a terminal emulator, such as [MobaXterm](http://mobaxterm.mobatek.net/).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+### Location
 
-# Header 1
-## Header 2
-### Header 3
+All workshops will be held in the EWS computer laboratory, [L416](http://ada.fs.illinois.edu/0210PLANB.html) [Digital Computer Laboratory](http://ada.fs.illinois.edu/0210.html).
 
-- Bulleted
-- List
+**There is no sign-up for this series—walk-ins are welcome and encouraged!**
 
-1. Numbered
-2. List
+L520 DCL can be a little tricky to find if you haven't been there before. It's located in the basement, and can be accessed by going down the main staircase in DCL and turning right.
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+### Topics
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+#### Introduction to the Command Line
+##### Feb. 16, 11:00 a.m.–1:00 p.m.
 
-### Jekyll Themes
+Bash
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/uiuc-cse/hpc-sp17/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+#### Basics of Cluster Computing
+##### Feb. 23, 11:00 a.m.–1:00 p.m.
 
-### Support or Contact
+Featuring Campus Cluster
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#### Scientific Computing on a Cluster
+##### Mar. 2, 11:00 a.m.–1:00 p.m.
+
+Featuring Campus Cluster
+
+#### Threaded Parallel Computing for Engineers
+##### Mar. 9, 11:00 a.m.–1:00 p.m.
+
+OpenMP
+
+#### Distributed Parallel Computing for Engineers
+##### Mar. 16, 11:00 a.m.–1:00 p.m.
+
+MPI
+
