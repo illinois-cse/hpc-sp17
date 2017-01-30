@@ -10,7 +10,7 @@ Any Unix-based machine has everything we need for the workshop. If you plan to u
 
 ### Location
 
-All workshops will be held in the EWS computer laboratory, [L416](http://ada.fs.illinois.edu/0210PLANB.html) [Digital Computer Laboratory](http://ada.fs.illinois.edu/0210.html).
+All workshops will be held in the EWS computer laboratory, [L520](http://ada.fs.illinois.edu/0210PLANB.html) [Digital Computer Laboratory](http://ada.fs.illinois.edu/0210.html).
 
 **There is no sign-up for this series—walk-ins are welcome and encouraged!**
 
@@ -20,27 +20,32 @@ L520 DCL can be a little tricky to find if you haven't been there before. It's l
 ### Topics
 
 #### Introduction to the Command Line
-##### Feb. 16, 11:00 a.m.–1:00 p.m.
+
+**Feb. 16, 11:00 a.m.–1:00 p.m.**
 
 Bash
 
 #### Basics of Cluster Computing
-##### Feb. 23, 11:00 a.m.–1:00 p.m.
+
+**Feb. 23, 11:00 a.m.–1:00 p.m.**
 
 Featuring Campus Cluster
 
 #### Scientific Computing on a Cluster
-##### Mar. 2, 11:00 a.m.–1:00 p.m.
+
+**Mar. 2, 11:00 a.m.–1:00 p.m.**
 
 Featuring Campus Cluster
 
 #### Threaded Parallel Computing for Engineers
-##### Mar. 9, 11:00 a.m.–1:00 p.m.
+
+**Mar. 9, 11:00 a.m.–1:00 p.m.**
 
 OpenMP
 
 #### Distributed Parallel Computing for Engineers
-##### Mar. 16, 11:00 a.m.–1:00 p.m.
+
+**Mar. 16, 11:00 a.m.–1:00 p.m.**
 
 MPI
 
