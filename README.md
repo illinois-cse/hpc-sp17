@@ -45,7 +45,7 @@ Exercises:
 #### Basics of Cluster Computing
 
 **Feb. 23, 11:00 a.m.–1:00 p.m.**
-<a href="./lessons/bash/ex11"><font style="font-weight: bold;">#1</font></a>,
+
 Featuring Campus Cluster
 
 #### Scientific Computing on a Cluster
