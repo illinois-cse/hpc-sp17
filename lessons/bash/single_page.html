@@ -1,0 +1,1384 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAYcAA0AAAAACjQAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAABMAAAABwAAAAca8vGTk9TLzIAAAFMAAAARAAAAFZG1VHVY21hcAAAAZAAAAA+AAABQgAP9AdjdnQgAAAB0AAAAAQAAAAEACICiGdhc3AAAAHUAAAACAAAAAj//wADZ2x5ZgAAAdwAAADRAAABEKyikaNoZWFkAAACsAAAAC0AAAA2AtXoA2hoZWEAAALgAAAAHAAAACQHngNFaG10eAAAAvwAAAAQAAAAEAwAACJsb2NhAAADDAAAAAoAAAAKALIAVG1heHAAAAMYAAAAHwAAACABEAB2bmFtZQAAAzgAAALBAAAFu3I9x/Nwb3N0AAAF/AAAAB0AAAAvaoFvbwAAAAEAAAAAzBdyYwAAAADP2IQvAAAAAM/bz7t4nGNgZGFgnMDAysDB1Ml0hoGBoR9CM75mMGLkYGBgYmBlZsAKAtJcUxgcPsR8iGF2+O/AEMPsznAYKMwIkgMA5REMOXicY2BgYGaAYBkGRgYQsAHyGMF8FgYFIM0ChED+h5j//yEk/3KoSgZGNgYYk4GRCUgwMaACRoZhDwCs7QgGAAAAIgKIAAAAAf//AAJ4nHWMMQrCQBBF/0zWrCCIKUQsTDCL2EXMohYGSSmorScInsRGL2DOYJe0Ntp7BK+gJ1BxF1stZvjz/v8DRghQzEc4kIgKwiAppcA9LtzKLSkdNhKFY3HF4lK69ExKslx7Xa+vPRVS43G98vG1DnkDMIBUgFN0MDXflU8tbaZOUkXUH0+U27RoRpOIyCKjbMCVejwypzJJG4jIwb43rfl6wbwanocrJm9XFYfskuVC5K/TPyczNU7b84CXcbxks1Un6H6tLH9vf2LRnn8Ax7A5WQAAAHicY2BkYGAA4teL1+yI57f5ysDNwgAC529f0kOmWRiYVgEpDgYmEA8AUzEKsQAAAHicY2BkYGB2+O/AEMPCAAJAkpEBFbAAADgKAe0EAAAiAAAAAAQAAAAEAAAAAAAAKgAqACoAiAAAeJxjYGRgYGBhsGFgYgABEMkFhAwM/xn0QAIAD6YBhwB4nI1Ty07cMBS9QwKlQapQW3VXySvEqDCZGbGaHULiIQ1FKgjWMxknMfLEke2A+IJu+wntrt/QbVf9gG75jK577Lg8K1qQPCfnnnt8fX1NRC/pmjrk/zprC+8D7tBy9DHgBXoWfQ44Av8t4Bj4Z8CLtBL9CniJluPXASf0Lm4CXqFX8Q84dOLnMB17N4c7tBo1AS/Qi+hTwBH4rwHHwN8DXqQ30XXAS7QaLwSc0Gn8NuAVWou/gFmnjLrEaEh9GmDdDGgL3B4JsrRPDU2hTOiMSuJUIdKQQayiAth69r6akSSFqIJuA19TrzCIaY8sIoxyrNIrL//pw7A2iMygkX5vDj+G+kuoLdX4GlGK/8Lnlz6/h9MpmoO9rafrz7ILXEHHaAx95s9lsI7AHNMBWEZHULnfAXwG9/ZqdzLI08iuwRloXE8kfhXYAvE23+23DU3t626rbs8/8adv+9DWknsHp3E17oCf+Z48rvEQNZ78paYM38qfk3v/u3l3u3GXN2Dmvmvpf1Srwk3pB/VSsp512bA/GG5i2WJ7wu430yQ5K3nFGiOqgtmSB5pJVSizwaacmUZzZhXLlZTq8qGGFY2YcSkqbth6aW1tRmlaCFs2016m5qn36SbJrqosG4uMV4aP2PHBmB3tjtmgN2izkGQyLWprekbIntJFing32a5rKWCN/SdSoga45EJykyQ7asZvHQ8PTm6cslIpwyeyjbVltNikc2HTR7YKh9LBl9DADC0U/jLcBZDKrMhUBfQBvXRzLtFtjU9eNHKin0x5InTqb8lNpfKv1s1xHzTXRqgKzek/mb7nB8RZTCDhGEX3kK/8Q75AmUM/eLkfA+0Hi908Kx4eNsMgudg5GLdRD7a84npi+YxNr5i5KIbW5izXas7cHXIMAau1OueZhfj+cOcP3P8MNIWLyYOBuxL6DRylJ4cAAAB4nGNgYoAALjDJyIAOWMCiTIxMLDmZedkABtIBygAAAA==) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>single_page</title></head><body><article class="markdown-body"><p><a href="http://cse.illinois.edu/training"><img alt="" src="https://bytebucket.org/davis68/resources/raw/f7c98d2b95e961fae257707e22a58fa1a2c36bec/logos/baseline_cse_wdmk.png?token=be4cc41d4b2afe594f5b1570a3c5aad96a65f0d6" /></a></p>
+<h1 id="introduction-to-bash-the-linux-command-line"><a name="user-content-introduction-to-bash-the-linux-command-line" href="#introduction-to-bash-the-linux-command-line" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Introduction to Bash (The Linux Command Line)</h1>
+<p><img alt="" src="img/dilbert-1486.strip.gif" /></p>
+<h2 id="contents"><a name="user-content-contents" href="#contents" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="contents"></a>Contents</h2>
+<ul>
+<li>
+<p><strong><a href="#intro" style="text-decoration:none; color:black;">Introduction</a></strong></p>
+</li>
+<li>
+<p><strong><a href="#filesfolders1" style="text-decoration:none; color:black;">Files and Directories</a></strong></p>
+</li>
+<li>
+<p><strong><a href="#filesfolders2" style="text-decoration:none; color:black;">Manipulating Files and Directories</a></strong></p>
+</li>
+<li>
+<p><strong><a href="#pipesfilters" style="text-decoration:none; color:black;">Pipes and Filters</a></strong></p>
+</li>
+<li>
+<p><strong><a href="#shellscripts" style="text-decoration:none; color:black;">Shell Scripts</a></strong></p>
+</li>
+<li>
+<p><strong><a href="#findingthings" style="text-decoration:none; color:black;">Finding Things</a></strong></p>
+</li>
+</ul>
+<h2 id="introduction"><a name="user-content-introduction" href="#introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="intro"></a><a href="#contents" style="text-decoration:none; color:black;">Introduction</a></h2>
+<p>A shell is a program that let’s the user interact with the operating system through a command line. While most computers have graphical user interfaces (GUI), shells only have a textual interface. The textual interface may seem cryptic at first but it can be very useful due to its high action-to-keystroke ratio, its support for automating repetitive tasks, and it can also access networked machines. There are various shell programs out there with the most common one being Bash (<strong>B</strong>orn <strong>A</strong>gain <strong>SH</strong>ell). To begin, let&rsquo;s figure out which shell we are using by typing <code>echo $SHELL</code> in the command line:</p>
+<pre><code>$ echo $SHELL
+/bin/bash
+</code></pre>
+<p><code>echo</code> is a command that prints a string to the terminal. In this case the shell printed the environment variable <code>$SHELL</code>. We can also tell the shell to print anything we like such as</p>
+<pre><code>$ echo Hello World!
+Hello World!
+</code></pre>
+<p>To print to the screen who the current user is type <code>whoami</code> and your LoginID should be printed to the terminal. If you are using your personal computer then the username will be printed to the terminal.</p>
+<pre><code>$ whoami
+&lt;LoginID&gt;
+</code></pre>
+<p>Similarly, if we wanted to know who else was logged into the computer type <code>who</code> and a list of the users should print to the terminal. While this workshop will not cover every command the <code>man</code> will become your best friend. The <code>man</code> command prints to the screen the manual page for all other commands recognized by the shell. For example:</p>
+<pre><code>$ man mv
+
+NAME
+    mv - move (rename) files
+SYNOPSIS
+    mv [OPTION] ... [-T] SOURCE DEST
+    .
+    .
+    .
+</code></pre>
+<p>This command will help you later on when you want to figure out how to use a specific command.</p>
+<h2 id="files-and-directories"><a name="user-content-files-and-directories" href="#files-and-directories" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="filesfolders1"></a><a href="#contents" style="text-decoration:none; color:black;">Files and Directories</a></h2>
+<p>When moving around a linux system you will be encountered by files and directories. The linux system considers everything to be a file with directories being files that contain files. The following section will discuss how to file system is set up and how to navigate the file system.</p>
+<p>The first thing we probably want to know is where are we within the file system. The command <code>pwd</code> will <strong>p</strong>rint the <strong>w</strong>orking <strong>d</strong>irectory. For example:</p>
+<pre><code>$ pwd
+/home/&lt;LoginID&gt;
+</code></pre>
+<p>It is important to note that the directory that is printed to the terminal starts with <code>/</code>. This refers to the root directory, or the outermost directory while everything after a <code>/</code> is a subdirectory. In this case the <code>LoginID</code> is a subdirectory of <code>home</code> and so on.</p>
+<p>When referring to the location of a file or directory there are two ways in which you can reference the path to the file. The <em>absolute</em> path refers to a file or directory from the root directory. The <em>relative</em> path refers to a file or directory from the current directory.</p>
+<h3 id="unix-file-system"><a name="user-content-unix-file-system" href="#unix-file-system" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Unix File System</h3>
+<p><img alt="" src="img/file-system-01.png" /></p>
+<ul>
+<li>All of the directories are descended from the master <strong>root</strong> directory <code>/</code>.</li>
+<li>Each of the top-level directories descend directly from the <strong>root</strong> <code>/</code>. There are many other standard directories on Unix-derived systems: <code>/usr</code>, <code>/bin</code>, <code>/opt</code>, <em>etc.</em>)</li>
+</ul>
+<p><br></p>
+<hr />
+<p><br></p>
+<h4 id="within-any-one-of-these-folders-we-can-identify-a-subsidiary-structure"><a name="user-content-within-any-one-of-these-folders-we-can-identify-a-subsidiary-structure" href="#within-any-one-of-these-folders-we-can-identify-a-subsidiary-structure" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Within any one of these folders we can identify a subsidiary structure:</h4>
+<p><img alt="" src="img/file-system-02.png" /></p>
+<p><br></p>
+<hr />
+<p><br><br />
+And then we can drill down all the way to something that perhaps looks more familiar to you, a home directory populated with files just like you may treat the <strong>My Documents</strong> folder on Windows.</p>
+<p><img alt="" src="img/file-system-03.png" /></p>
+<p>To navigate this system on the command line (as opposed to in a file browser), you only need a few basic commands: <code>pwd</code> ,<code>ls</code> ,<code>cd</code>.</p>
+<p>You already learned that <code>pwd</code> prints the working directory. To list the contents within a directory use the <code>ls</code> command. For example:</p>
+<pre><code>$ ls
+theme.mp3 boss.mp3
+</code></pre>
+<p>Often a command will take options or flags which begin with <code>-</code>. Type <code>ls -l</code> to print a long list of the contents within a directory.</p>
+<pre><code>$ ls -l
+total 2
+drwx------. 2 LoginID ews 80 Aug 15 2015 boss.mp3
+drwx------. 2 LoginID ews 80 Oct  6 2015 theme.mp3
+</code></pre>
+<p>Other flags such as <code>-a</code>,<code>-t</code>, or <code>-r</code> display the same contents with some modifications (Refer to the <code>man</code> pages for a full list of all the flags). The <code>-a</code> flag will display all files including the hidden files.</p>
+<pre><code>$ ls -a
+.       boss.mp3        theme.mp3
+..      .DS_Store
+</code></pre>
+<p>To physically move from one directory to another you can use the <code>cd</code> command, as in <strong>c</strong>hange <strong>d</strong>irectory. This can be used in the following way:</p>
+<pre><code>$ cd sonic
+</code></pre>
+<p>Notice that the current directory has changed. We can direct <code>cd</code> to a directory through an absolute path. For example:</p>
+<pre><code>$ cd /home/sonic/music
+</code></pre>
+<p>A few handy shortcuts when moving around the file system:</p>
+<p><code>.</code> refers to the current directory</p>
+<p><code>..</code> refers to the directory above the current directory</p>
+<p><code>~</code> refers to the home directory</p>
+<p><em>Tab completion</em> will become your best friend when using a linux system. When typing a path becomes tedious you can use tab completion to auto-complete the directory or file. This becomes especially useful for long paths and filenames.</p>
+<h3 id="do-exercise-1"><a name="user-content-do-exercise-1" href="#do-exercise-1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Do <a href="ex1.html">Exercise #1</a></h3>
+<h2 id="manipulating-files-and-directories"><a name="user-content-manipulating-files-and-directories" href="#manipulating-files-and-directories" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="filesfolders2"></a><a href="#contents" style="text-decoration:none; color:black;">Manipulating Files and Directories</a></h2>
+<p>Over time you will start manipulating files and directories. This will include creating, copying, moving, removing and renaming files and directories. It is essential to have an organized file system especially when you start dealing with multiple files from multiple processes. This section will discuss the basic simple commands necessary to manipulate files and directories.</p>
+<p>The first basic command is <code>mkdir</code>. This command <strong>m</strong>a<strong>k</strong>es a <strong>dir</strong>ectory in the file system. Like many other commands there are multiple flags that can be used with this command, however the basic usage is <code>mkdir directory_name</code>. For example:</p>
+<pre><code>$ ls
+bin data usr
+$ mkdir home
+$ ls
+bin data home usr
+</code></pre>
+<p>To <strong>c</strong>o<strong>p</strong>y a file or directory you can use the <code>cp</code> command. This second basic command allows the user to copy a file or directory and specify a destination. This command has the format <code>cp source destination</code>. For Example:</p>
+<pre><code>$ ls
+bin data home usr
+$ cp home thesis
+bin data home thesis usr
+</code></pre>
+<p>The next basic command is <code>mv</code> which easily enough stands for <strong>m</strong>o<strong>v</strong>e. Similar to <code>cp</code> in this command you specify a source and a destination however unlike <code>cp</code> it will only keep the destination. For this reason <code>mv</code> is used to rename files. To move a file you can type the following in the command line:</p>
+<pre><code>$ ls
+bin data home thesis usr
+$ mv thesis home/
+$ ls
+bin data home usr
+$ cd home
+$ ls
+thesis
+</code></pre>
+<p>Notice that the directory <code>thesis</code> is no longer in the root directory but instead in the home directory. To rename a file you can specify the <code>source</code> as long as the source is not within the current directory. For example:</p>
+<pre><code>$ ls
+thesis
+$ mv thesis paper
+$ ls
+paper
+</code></pre>
+<p>Finally there a few different ways to remove a file or directory. For example:</p>
+<pre><code>$ ls
+cse.txt mend.cfg music papers school thesis
+$ rm mend.cfg
+$ ls
+cse.txt music papers school thesis
+$ rm thesis
+rm: thesis: is a directory
+</code></pre>
+<p>You cannot simply remove a directory using the <code>rm</code> command. It turns out that to remove a directory there are is a special <code>rmdir</code> command.</p>
+<pre><code>$ rmdir thesis
+$ ls
+cse.txt music papers school
+</code></pre>
+<p>Another option is to use the flag <code>-d</code> which attempts to remove directories as well as other file types. For example:</p>
+<pre><code>$ rm -d school
+$ ls
+cse.txt music papers
+</code></pre>
+<p>We now know how copy, move, rename, and remove a file. But what about creating a new file? There are a few different ways you can create a new file. To create a blank file you can use the <code>touch</code> command. For example:</p>
+<pre><code>$ touch ae410.txt
+$ ls
+ae410.txt cse.txt music papers
+</code></pre>
+<p>In some cases the <code>touch</code> command is used to update the timestamp on a file if the file already exists.</p>
+<p>To open a new file you can use a different editors. For example if I wanted to open a new file and begin editing it I could use the text editors <code>vi</code> <code>vim</code> <code>nano</code> among others. In this case lets use <code>vi</code> to open a new file called <code>cse450.txt</code>:</p>
+<pre><code>$ vi cse450.txt
+</code></pre>
+<p>The <code>cat</code> command allows you to view but not edit a file. For example if we want to view the file <code>cse450.txt</code> we can:</p>
+<pre><code>$ cat cse450.txt
+This is what is inside the cse450.txt file.
+</code></pre>
+<p>Lets say that there are a lot of files that you want to copy, move, rename, or remove. We can use what are called <em>Wildcards</em>.</p>
+<ul>
+<li><code>*</code> - represents zero or more characters</li>
+<li><code>?</code> - represents a single character</li>
+<li><code>[]</code> - represents a range of characters</li>
+</ul>
+<p>These commands allow the user to ask for a specific pattern or set of files and directories. For example lets say we have the following in our directory,</p>
+<pre><code>$ ls
+ae410.txt cse.txt dir5 dir37 dir40
+file1.txt file2.txt music papers
+</code></pre>
+<p>And we want to know what files we have that start with the letter <code>f</code> we can use the <code>*</code> command.</p>
+<pre><code>$ ls f*
+file1.txt file2.txt
+</code></pre>
+<p>If we cant to find all files that have exactly 3 characters as an extension we can use the <code>?</code> command:</p>
+<pre><code>$ ls *.???
+ae410.txt cse.txt file1.txt file2.txt
+</code></pre>
+<p>The last wildcard listed above is the <code>[]</code> command which can be used to specify a list of characters that you want to find. For example if you want to remove all files that start with the letter <strong>a</strong> and <strong>c</strong> you can type in the command line</p>
+<pre><code>$ ls
+ae410.txt cse.txt dir5 dir37 dir40
+file1.txt file2.txt music papers
+$ rm [ac]*
+$ ls
+dir5 dir37 dir40 file1.txt
+file2.txt music papers
+</code></pre>
+<p>As a reminder if there is a command that you don&rsquo;t know exactly how to use or if you want to find out what the flags are reference the <code>man</code> pages.</p>
+<h3 id="do-exercise-2"><a name="user-content-do-exercise-2" href="#do-exercise-2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Do <a href="ex2.html">Exercise #2</a></h3>
+<h2 id="pipes-and-filters"><a name="user-content-pipes-and-filters" href="#pipes-and-filters" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="pipesfilters"></a><a href="#contents" style="text-decoration:none; color:black;">Pipes and Filters</a></h2>
+<p>When we type a command or run a program we will get an output printed to the terminal. Pipes can redirect a command or a program&rsquo;s output to a file for future reference or to be used at a later time. In this section you will learn how to use the pipes and how to combine pipes into powerful single-purpose programs.</p>
+<p>The first command to learn is <code>&gt;</code>. This pipe, used as <code>command &gt; file</code> redirects a command&rsquo;s output to a file. For example:</p>
+<pre><code>$ ls  
+theme.mp3 boss.mp3
+$ ls &gt; output.txt
+$ cat output.txt
+theme.mp3
+boss.mp3
+</code></pre>
+<p>Sometimes you run into the problem of redirection multiple outputs to a single file. If you use the <code>&gt;</code> command the original file contents will be overwritten. To append new outputs to a file you can use the command <code>&gt;&gt;</code>. For example:</p>
+<pre><code>$ cat output.txt
+theme.mp3
+boss.mp3
+$ echo Hello! &gt;&gt; output.txt
+$ cat output.txt
+theme.mp3
+boss.mp3
+Hello!
+</code></pre>
+<p>If you would like to read the contents of a file to use in your command you can use the <code>&lt;</code> command. In this case instead of redirecting an output to a file you are redirecting a file&rsquo;s contents into the input of command. For example:</p>
+<pre><code>$ rm *.mp3 &lt; output.txt
+$ cat output.txt
+Hello!
+</code></pre>
+<p>Sometimes in order to combine two command line steps you can use a pipeline. That is you can use the output of one file into the input of another file using the <code>|</code> command. For example:</p>
+<pre><code>$ ls
+dir5 dir37 dir40 file1.txt
+file2.txt music papers
+$ ls | head -3
+dir5 dir37 dir40
+</code></pre>
+<h3 id="do-exercise-3"><a name="user-content-do-exercise-3" href="#do-exercise-3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Do <a href="ex3.html">Exercise #3</a></h3>
+<h2 id="shell-scripts"><a name="user-content-shell-scripts" href="#shell-scripts" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="shellscripts"></a><a href="#contents" style="text-decoration:none; color:black;">Shell Scripts</a></h2>
+<p>There will come a time when using bash that typing in specific commands in the command line will become cumbersome. This is where shell scripts come in. A user can write a series of commands in a shell script that the computer will then execute sequentially. It is important to know that commands that work on the command line will work the same way when implemented in a script. Likewise if a series of commands are implemented in a script, the same result will occur if the user inputs the commands manually in the command line. The following section will introduce the concept of shell scripts, how to write them, and how to execute them.</p>
+<p>Consider the following simple script:</p>
+<pre><code>#!/bin/bash
+echo This script lists the files in the directory
+ls
+</code></pre>
+<p>Lets break down the script and how its works. In the first line you&rsquo;ll see <code>#!/bin/bash</code> is written. Every shell script should start with this exact line, this tells Linux which interpreter to use for this file. The second command is the <code>echo</code> command which prints everything that follows it. And finally we have the <code>ls</code> command which just lists the directory. If a user were to execute this series of command manually it would look like this:</p>
+<pre><code>$ echo This script lists the files in the directory
+This script lists the files in the directory
+$ ls
+bin data home usr
+</code></pre>
+<p>Remember that Linux is an extensionless system therefore when writing a shell script you don&rsquo;t have to append the <code>.sh</code> extension, however doing this will help you identify which files are shell scripts and which are not.</p>
+<p>In a shell script lines that start with <code>#</code> are considered comments and will not be interpreted. There are some exceptions however, including the first line of every script.</p>
+<p>You can also declare variables within a shell script. This can be done in the following way:</p>
+<pre><code>#!/bin/bash
+# Declare variable
+str='Hello World!'
+echo $str
+</code></pre>
+<p>Notice that when we are defining the variable there are no spaces on either side of the <code>=</code> sign. Additionally when you want to refer to the variable you have to place <code>$</code> sign right in front of the variable to signify that you are referring to a variable. The previous script will output:</p>
+<pre><code>$ ./script.sh
+Hello World!
+</code></pre>
+<p>To run the shell script we typed <code>./</code> and then the filename. Remember a few sections back that <code>.</code> specifies the current directory. When executing a shell script you are essentially telling the computer that the script you are attempting to execute is in the current directory. An absolute path would also work. If the script in is the directory above your current directory you could use <code>../</code> to run the script.</p>
+<p>It may be the case that when you write a shell script your system does not yet know it&rsquo;s an executable script. To change this adjust the permissions on the file by typing:</p>
+<pre><code>$ chmod +x script.sh
+</code></pre>
+<p>There are a few automatically set variables when running a script. These are:</p>
+<p><code>$0</code>: The script filename</p>
+<p><code>$1</code>&hellip;<code>$9</code>: The command line arguments</p>
+<p><code>$#</code>: The number of command line arguments</p>
+<p><code>$*</code>: All of the command line arguments</p>
+<p>As in any other programming language you can also implement <code>if</code>,<code>else</code>,<code>fi</code> statements, <code>for</code> loops, and <code>while</code> loops. For example you can write the following in a script:</p>
+<pre><code>#!/bin/bash
+count=100
+if [ $count -eq 100 ]
+then
+    echo "Count is 100"
+else
+    echo "Count is not 100"
+fi
+</code></pre>
+<p>This script defines the variable <code>count</code> and executes the <code>echo</code> command if the variable <code>count</code> equals a certain value. Notice that the statement ends with <code>fi</code>. Sometimes it is useful to run a command until a certain requirement is met. For example, lets consider the following <code>while</code> loop:</p>
+<pre><code>#!/bin/bash
+count=1
+while(($n &lt;= 5))
+do
+    echo "This loop has run $n times"
+    n=$((n+1))
+done
+</code></pre>
+<p>The output of this script will be:</p>
+<pre><code>This loop has run 1 times
+This loop has run 2 times
+This loop has run 3 times
+This loop has run 4 times
+This loop has run 5 times
+</code></pre>
+<p>Take a look at the structure of the while loop. The basic structure of the while loop can be broken down to:</p>
+<pre><code>while &lt;condition&gt;
+do
+    &lt;commands&gt;
+done
+</code></pre>
+<p>Similar to the <code>while</code> loop, the <code>for</code> loop will execute a command a command a number of times. However instead of executing the command until a condition is met a <code>for</code> loop will only execute the command for a pre-specified number of times. For example:</p>
+<pre><code>#!/bin/bash
+for value in {1..5}
+do
+    echo "This loop has run $n times"
+done
+</code></pre>
+<p>This loop will produce the exact same result as the <code>while</code> loop. However you are not limited to just numerical values. You can also execute a command based on the items within a variable. This could be</p>
+<pre><code>names='Name1 Name2 Name3'
+</code></pre>
+<p>More advanced loop could include the <code>break</code> and <code>continue</code> commands. The <code>break</code> command tells bash to exit the loop when a condition is met. The <code>continue</code> command tells bash to skip the current iteration and move on to the next iteration within the loop. For example:</p>
+<pre><code>#!/bin/bash
+for value in {1..10}
+do
+    if [ $value -eq 5 ]
+    then
+        echo The current count is $value
+        continue
+    fi
+    if [ $value -eq 7 ]
+    then
+        echo The count is $value
+        echo Now exiting loop
+        break
+    fi
+done
+</code></pre>
+<p>You can also prompt the user to select from a list of choices using the <code>select</code>,<code>do</code>,<code>done</code> sequence. For example the following script will prompt the user to run or quit:</p>
+<pre><code>#!/bin/bash
+options='Continue Quit'
+PS3='Choose 1) or 2) to Continue or Quit: '
+select option in $options
+do
+    if [ $option == 'Continue' ]
+    then
+        continue
+    fi
+    if [ $option == 'Quit' ]
+    then
+        break
+    fi
+done
+</code></pre>
+<h3 id="do-exercise-5"><a name="user-content-do-exercise-5" href="#do-exercise-5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Do <a href="ex5.html">Exercise #5</a></h3>
+<h2 id="finding-things"><a name="user-content-finding-things" href="#finding-things" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><a name="findingthings"></a><a href="#contents" style="text-decoration:none; color:black;">Finding Things</a></h2>
+<p>In this last section of the tutorial you are going to learn about finding useful data within your files.</p>
+<p>The first command and most powerful is the <code>grep</code> command. Lets say you want to find the line within a file that contains a specific string. We can then use the <code>grep</code> command to print that whole line to the terminal. For example lets consider the following file and its contents:</p>
+<pre><code>$ cat example.txt
+This line is about cars.
+This line is about airplanes.
+This line only has one sentence.
+</code></pre>
+<p>If we wanted to print to the terminal the line that mentions the string <code>airplanes</code> then we can type the following command:</p>
+<pre><code>$ grep 'airplanes' example.txt
+This line is about airplanes.
+</code></pre>
+<p>We could also print to the terminal which line the string is in:</p>
+<pre><code>$ grep -n 'airplanes' example.txt
+2:This line is about airplanes.
+</code></pre>
+<p>You can refer to the <code>man</code> pages to see all of the available flags with this command.</p>
+<p>Another useful command is the <code>wc</code> command. This command will output the word, line, character, and byte count of a file. The information printed can be adjusted based on what flags are attached when typing the command. For example if we want to know the line count of a file:</p>
+<pre><code>$ wc -l example.txt
+    3 example.txt
+</code></pre>
+<p>These commands start to become powerful when you have a large amount of files that you want to look through. For example lets you that you have a large amount of files with the *.txt extension and you want to find the number of lines in each of them and print the results to a file. You can type the following</p>
+<pre><code>$ wc -l *.txt &gt; length
+</code></pre>
+<p>Another useful command is the <code>find</code> command. This command will isolate specific files that it <strong>finds</strong> and execute a specific command to those files. For example if you want to <code>rm</code> all files that fit the <code>find</code> condition then you could type:</p>
+<pre><code>$ find ~/ -name '*.txt' -exec rm {} \;
+</code></pre>
+<h3 id="do-exercise-6"><a name="user-content-do-exercise-6" href="#do-exercise-6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Do <a href="ex6.html">Exercise #6</a></h3>
+<h1 id="congratulations-now-you-are-a-linux-guru"><a name="user-content-congratulations-now-you-are-a-linux-guru" href="#congratulations-now-you-are-a-linux-guru" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Congratulations! Now you are a Linux-guru<sup>*</sup>!</h1>
+<p><img alt="" src="img/xkcd-cautionary.png" /></p></article></body></html>
