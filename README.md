@@ -27,12 +27,12 @@ L520 DCL can be a little tricky to find if you haven't been there before. It's l
 <p style="margin: 0px !important;">The <a href ="http://top500.org"><font style="font-weight: bold;">TOP500 Project</font></a>: The <a href ="http://top500.org/list/2016/11/"><font style="font-weight: bold;">list</font></a> of top 500 Supercomputers</p>
 <!-- <h3 style="border: 0px; padding: 0px;">Linux command line</h3> -->
 <p>
-<b>Lesson notes:</b> <a href="./lessons/bash/single_page.html"><font style="font-weight:bold;">Single page</font></a> or 
+<b>Lesson notes:</b> <a href="./lessons/bash/single_page.html"><font style="font-weight:bold;">Single page</font></a> or
 <a href="./lessons/bash/bash_multi.html">
 	<font style="font-weight:bold;">Multi-page</font>
 </a>
 <br>
-Exercises: 
+Exercises:
 <a href="./lessons/bash/ex1.html"><font style="font-weight: bold;">#1</font></a>,
 <a href="./lessons/bash/ex2.html"><font style="font-weight: bold;">#2</font></a>,
 <a href="./lessons/bash/ex3.html"><font style="font-weight: bold;">#3</font></a>,
@@ -47,6 +47,8 @@ Exercises:
 **Feb. 23, 11:00 a.m.–1:00 p.m.**
 
 Featuring Campus Cluster
+<br>
+<b>Lesson notes:</b> <a href="./lessons/scicomp/single_page.html"><font style="font-weight:bold;">Single page</font></a>
 
 #### Scientific Computing on a Cluster
 
@@ -65,4 +67,3 @@ OpenMP
 **Mar. 16, 11:00 a.m.–1:00 p.m.**
 
 MPI
-
