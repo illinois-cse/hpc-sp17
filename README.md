@@ -48,7 +48,7 @@ Exercises:
 
 Featuring Campus Cluster
 <br>
-<b>Lesson notes:</b> <a href="./lessons/bash/single_page.html"><font style="font-weight:bold;">Single page</font></a>
+<b>Lesson notes:</b> <a href="./lessons/scicomp/single_page.html"><font style="font-weight:bold;">Single page</font></a>
 
 #### Scientific Computing on a Cluster
 
