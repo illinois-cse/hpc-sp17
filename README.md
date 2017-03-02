@@ -55,6 +55,8 @@ Featuring Campus Cluster
 **Mar. 2, 11:00 a.m.–1:00 p.m.**
 
 Featuring Campus Cluster
+<br>
+<b>Lesson notes:</b> <a href="./lessons/cc/cc_main.html"><font style="font-weight:bold;">Single page</font></a>
 
 #### Threaded Parallel Computing for Engineers
 
