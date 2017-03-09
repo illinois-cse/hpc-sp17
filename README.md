@@ -70,7 +70,7 @@ source /class/cs101/etc/venv/cse/bin/activate /class/cs101/etc/venv/cse/
 cd ~/Documents
 mkdir hpc-sp17
 cd hpc-sp17
-wget -O omp-c.ipynb https://github.com/maxim-belkin/hpc-sp16/blob/gh-pages/lessons/openmp/omp-c.ipynb?raw=true
+wget -O omp-c.ipynb https://github.com/uiuc-cse/hpc-sp17/blob/master/lessons/openmp/omp-c.ipynb?raw=true
 jupyter notebook omp-c.ipynb
 ```
 
