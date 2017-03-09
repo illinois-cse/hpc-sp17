@@ -62,8 +62,7 @@ Featuring Campus Cluster
 
 **Mar. 9, 11:00 a.m.–1:00 p.m.**
 
-OpenMP
-This lesson (and the next) are available in an ipython notebook.  To view either lesson using one of the EWS machines, execute the following commands in the terminal.
+This lesson on OpenMP (and the next on MPI) are available in an ipython notebook.  To view either lesson using one of the EWS machines, execute the following commands in the terminal.
 
 ```
 module load gcc
@@ -71,11 +70,11 @@ source /class/cs101/etc/venv/cse/bin/activate /class/cs101/etc/venv/cse/
 cd ~/Documents
 mkdir hpc-sp17
 cd hpc-sp17
-wget -O omp-c.ipynb https://github.com/maxim-belkin/hpc-sp16/blob/gh-pages/lessons/openmp/omp-c.ipynb?raw=true
+wget -O omp-c.ipynb https://github.com/uiuc-cse/hpc-sp17/blob/master/lessons/openmp/omp-c.ipynb?raw=true
 jupyter notebook omp-c.ipynb
 ```
 
-If you are running on your own computer and *already have OpenMP and the jupyter notebook installed*, simply using the last two lines is sufficient.  If you are on Windows, note that the wget command will not work, but you should be able to type the link into a browser and copy all of the text into a file named `omp-c.ipynb`.
+If you are running on your own computer and *already have OpenMP and the jupyter notebook installed*, simply navigating to your desired folder and using the last two lines is sufficient.  If you are on Windows, note that the wget command will not work, but you should be able to type the link into a browser and copy all of the text into a file named `omp-c.ipynb`.
 
 ##### OpenMP on OS X
 If you are using a personal laptop computer running OS X operating system, you have to install GNU GCC without multilib support. The reason behind this is that clang — the default compiler on a Mac computer — does not support OpenMP. Moreover, gcc is just a symbolic link to clang. The easiest way to install GNU GCC is to use [Homebrew](https://brew.sh/):
