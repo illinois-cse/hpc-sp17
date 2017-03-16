@@ -101,7 +101,7 @@ source /class/cs101/etc/venv/cse/bin/activate /class/cs101/etc/venv/cse/
 cd ~/Documents
 mkdir hpc-sp17
 cd hpc-sp17
-wget -O omp-c.ipynb https://github.com/uiuc-cse/hpc-sp17/blob/master/lessons/mpi/mpi-c.ipynb?raw=true
+wget -O mpi-c.ipynb https://github.com/uiuc-cse/hpc-sp17/blob/master/lessons/mpi/mpi-c.ipynb?raw=true
 jupyter notebook mpi-c.ipynb
 ```
 If you prefer to use openmpi instead of mpich2, you can can change that in the first line.  A static view of the notebook is also available:
